@@ -1,6 +1,9 @@
 package linkedlist;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 单双链表的操作都一样，需要额外两个变量：pre和curNext
  * 每次先更新curNext保存好下一个元素的指针，然后进行翻转更新，最后再将pre更新
@@ -28,7 +31,6 @@ public class ReverseList {
             pre = listA;
             listA = curNext;
         }
-
         return pre;
     }
 
@@ -41,6 +43,8 @@ public class ReverseList {
         }
     }
     public static DoubleNode reverseDoule(DoubleNode head) {
+
+
         if(head ==null)
             return null;
         DoubleNode pre = null;
@@ -56,6 +60,5 @@ public class ReverseList {
         return pre;
 
     }
-
 
 }
