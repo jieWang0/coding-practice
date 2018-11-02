@@ -50,10 +50,10 @@ public class N_Sort {
     public static void main(String[] args) {
        // String[] array = {"12345678987","12323332221","34567876544","34567876545","34567876547","34567876540","42223333334"};
 
-        String[] array = new String[100000];
+        String[] array = new String[1000000];
         Random random = new Random();
-        for(int i=0;i<100000;i++) {
-            String k = String.valueOf(random.nextInt(89999)+10000) + String.valueOf(random.nextInt(899999)+100000);
+        for(int i=0;i<1000000;i++) {
+            String k = String.valueOf(random.nextInt(89999)+10000) + String.valueOf(random.nextInt(8999)+1000);
             array[i] = k;
         }
         long begin = new Date().getTime();
